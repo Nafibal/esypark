@@ -13,11 +13,24 @@
   /* border: 2px solid red; */
 }
 .btn {
-  padding: 5px;
   border-radius: 3px;
   background-color: #111b47;
   color: white;
+  outline: none;
+  border: 2px solid #111b47;
+  cursor: pointer;
 }
+.btn.btn-alt {
+  background-color: white;
+  color: #111b47;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
 a {
   text-decoration: none;
   font-family: "Sora", sans-serif;
@@ -42,7 +55,61 @@ nav .nav-list .nav-item {
   color: #929ecc;
 }
 nav .nav-list .btn {
-  padding: 5px 24px;
+  padding: 3px 24px;
   color: white;
   font-size: 14px;
+}
+
+/* ABOUT SECTION */
+.section-about {
+  padding-top: 20px;
+}
+.section-about .about-svg {
+  position: absolute;
+  height: 500px;
+  right: -350px;
+  bottom: 0;
+  z-index: -1;
+}
+.section-about .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.about-info-container {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+}
+.about-info {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+.about-info h1 {
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #091133;
+  margin-bottom: 20px;
+}
+.about-info p {
+  font-size: 15px;
+  color: #505f98;
+  margin-bottom: 30px;
+}
+.about-info .btn-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about-info .btn-container button {
+  width: 200px;
+  padding: 5px 0;
+  margin-right: 30px;
+}
+.about-illust {
+  width: 400px;
 }
