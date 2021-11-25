@@ -51,6 +51,7 @@ body {
 
 /* LOGIN REGIS MODAL */
 .modal-container {
+  position: relative;
   padding: 50px;
   width: 800px;
   height: 500px;
@@ -131,4 +132,15 @@ body {
 .modal-info .social {
   width: 200px;
   margin: 0 auto;
+}
+.modal-container .btn-close {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  color: #111b47;
+  cursor: pointer;
 }
