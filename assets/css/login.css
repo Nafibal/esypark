@@ -1,0 +1,134 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.btn {
+  border-radius: 3px;
+  background-color: #111b47;
+  color: white;
+  outline: none;
+  border: 2px solid #111b47;
+  cursor: pointer;
+}
+.btn.btn-alt {
+  background-color: white;
+  color: #111b47;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  text-decoration: none;
+  font-family: "Sora", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* LOGIN REGIS MODAL */
+.modal-container {
+  padding: 50px;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 41px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.432);
+}
+.modal-container img {
+  width: 300px;
+}
+.modal-info {
+  padding: 30px;
+  height: 100%;
+  width: 550px;
+}
+.modal-info h2 {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #444b59;
+  margin-bottom: 5px;
+}
+.modal-info p {
+  letter-spacing: 1px;
+  font-family: "Nunito", sans-serif;
+  color: #444b59;
+  margin-bottom: 20px;
+}
+.modal-info p span {
+  font-weight: bold;
+  color: #111b47;
+  cursor: pointer;
+}
+.modal-info .input-container {
+  position: relative;
+  margin-bottom: 20px;
+  /* border: 2px solid red; */
+}
+.modal-info .input-container label {
+  font-family: "sora", sans-serif;
+  font-size: 14px;
+  color: rgb(116, 116, 116);
+  background-color: white;
+  padding: 0 10px;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+}
+.modal-info .input-container input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 0.5px solid rgb(116, 116, 116);
+  border-radius: 10px;
+}
+.modal-info .checkbox-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+.modal-info .checkbox-container input {
+  margin-right: 10px;
+}
+.modal-info .checkbox-container label {
+  margin-right: auto;
+}
+.modal-info button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.modal-info .center {
+  text-align: center;
+}
+.modal-info .social {
+  width: 200px;
+  margin: 0 auto;
+}
