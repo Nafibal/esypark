@@ -47,6 +47,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  background-color: rgba(0, 0, 0, 0.486);
 }
 
 /* LOGIN REGIS MODAL */
@@ -60,6 +61,7 @@ body {
   align-items: center;
   border-radius: 41px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.432);
+  background-color: white;
 }
 .modal-container img {
   width: 300px;
@@ -82,7 +84,7 @@ body {
   color: #444b59;
   margin-bottom: 20px;
 }
-.modal-info p span {
+.modal-info p span a {
   font-weight: bold;
   color: #111b47;
   cursor: pointer;
