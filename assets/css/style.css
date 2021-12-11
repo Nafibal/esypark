@@ -46,6 +46,19 @@ a {
   font-weight: 800;
   color: #37447e;
 }
+.arrow-btn {
+  background-color: #37447e;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.arrow-btn i {
+  color: white;
+  font-size: 25px;
+}
 
 /* NAVIGATION */
 nav {
@@ -298,3 +311,39 @@ footer img {
 }
 
 /* KOTA TERPOPULER */
+.section-popular {
+}
+.section-popular .container {
+}
+.section-popular .city-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.section-popular .city {
+  height: 250px;
+  width: 280px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.section-popular .city img {
+  width: 100%;
+}
+.section-popular .city h6 {
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.651);
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-popular .button-container {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  display: flex;
+  gap: 20px;
+}
