@@ -522,3 +522,21 @@ footer img {
   font-weight: bold;
   font-size: 20px;
 }
+
+/* PARTNER SECTION */
+.partner {
+  padding: 40px 0;
+}
+.partner__container {
+  background-image: url("../image/partner-img.png");
+  background-size: cover;
+  height: 300px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.partner__container h2 {
+  color: white;
+  font-size: 30px;
+  text-align: right;
+  text-shadow: 2px 2px 4px black;
+}
