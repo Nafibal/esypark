@@ -324,8 +324,6 @@ footer img {
 .section-popular {
   padding-bottom: 100px;
 }
-.section-popular .container {
-}
 .section-popular .city-container {
   margin-top: 80px;
   display: flex;
@@ -392,25 +390,25 @@ footer img {
   justify-content: space-between;
   position: relative;
 }
-.section-location .location {
+.location {
   height: 360px;
   width: 320px;
   border-radius: 5px;
   box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.336);
   overflow: hidden;
 }
-.section-location .location img {
+.location img {
   width: 100%;
 }
-.section-location .location-info {
+.location-info {
   padding: 20px 30px;
 }
-.section-location .location-name {
+.location-name {
   color: #111b47;
   font-size: 18px;
   margin-bottom: 0.5em;
 }
-.section-location .location-desc {
+.location-desc {
   color: #505f98;
   font-size: 14px;
 }
@@ -551,7 +549,6 @@ footer img {
 /* APPLICATION */
 /* ============= */
 .app {
-  min-height: 90vh;
   padding: 40px 0;
 }
 .app__menu {
@@ -869,4 +866,53 @@ footer img {
 }
 .ewallet--purple {
   background-color: #4b2489;
+}
+
+/* ACTIVE */
+.app__active {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  padding: 20px 30px 100px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 1px black;
+  position: relative;
+}
+.app__active .location {
+  width: 320px;
+  /* height: 300px; */
+}
+.app__active .location img {
+  width: 100%;
+}
+.app__active .location-info {
+  padding: 20px 30px;
+}
+
+.active__info {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px 0;
+}
+.active__label {
+  width: 100%;
+  border-radius: 10px;
+  color: #505f98;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.658);
+  padding: 10px 20px;
+}
+.active__button--container {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  display: flex;
+  gap: 30px;
+}
+.active-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
 }

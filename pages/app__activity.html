@@ -36,56 +36,44 @@
     <section class="app">
       <div class="container container--flex">
         <div class="app__menu">
-          <a class="app__link app__link--selected" href="./app__location.html"
-            >LOKASI</a
-          >
+          <a class="app__link" href="./app__location.html">LOKASI</a>
           <a class="app__link" href="">DOMPET</a>
-          <a class="app__link" href="./app__activity.html">AKTIVITAS</a>
+          <a class="app__link app__link--selected" href="./app__activity.html"
+            >AKTIVITAS</a
+          >
           <a class="app__link" href="">KENDARAAN</a>
         </div>
-        <div class="app__location">
-          <div class="app__searchbar">
-            <input type="text" placeholder="Search..." />
-            <i class="fas fa-search"></i>
-          </div>
-          <div class="location__map-view">
-            <h3 class="app__title">Map View</h3>
-            <img src="../assets/image/app-map.png" alt="" />
-          </div>
-          <div class="location__list-view">
-            <h3 class="app__title">List View</h3>
-            <div class="location__list-container">
-              <a href="./app__location-detail.html" class="location__list">
-                <img
-                  class="location__image"
-                  src="../assets/image/location/location-1.png"
-                  alt=""
-                />
-                <div class="location__info">
-                  <h4 class="location__name">
-                    <i class="fas fa-map-marker-alt"></i> Ikea Serpong
-                  </h4>
-                  <p class="location__slot">
-                    <i class="fas fa-info-circle"></i> 200 Slot Tersedia
-                  </p>
-                </div>
-              </a>
-              <a href="./app__location-detail.html" class="location__list">
-                <img
-                  class="location__image"
-                  src="../assets/image/location/location-1.png"
-                  alt=""
-                />
-                <div class="location__info">
-                  <h4 class="location__name">
-                    <i class="fas fa-map-marker-alt"></i> Ikea Serpong
-                  </h4>
-                  <p class="location__slot">
-                    <i class="fas fa-info-circle"></i> 200 Slot Tersedia
-                  </p>
-                </div>
-              </a>
+
+        <div class="app__active">
+          <a href="./app__location-detail.html" class="location">
+            <img src="../assets/image/location/location-1.png" alt="" />
+            <div class="location-info">
+              <h5 class="location-name">Ikea, Serpong</h5>
+              <p class="location-desc">
+                Ikea serpong is furniture store. This store open 9.00 AM until
+                11.00 PM
+              </p>
             </div>
+          </a>
+          <div class="active__info">
+            <div class="active__label">
+              <p>Area Parkir : A12</p>
+            </div>
+            <div class="active__label">
+              <p>Kendaraan : Avanza</p>
+            </div>
+            <div class="active__label">
+              <p>Plat Nomor : N 532 A</p>
+            </div>
+            <div class="active__label">
+              <img src="../assets/image/qr-code.png" alt="" />
+            </div>
+          </div>
+          <div class="active__button--container">
+            <button class="btn active-btn">BUKA PENGAMAN</button>
+            <a href="./app__checkout.html">
+              <button class="btn active-btn">CHECKOUT</button>
+            </a>
           </div>
         </div>
       </div>
