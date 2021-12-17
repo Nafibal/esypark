@@ -42,7 +42,8 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+pre {
   text-decoration: none;
   font-family: "Sora", sans-serif;
 }
@@ -652,6 +653,7 @@ footer img {
 }
 .location__slot {
   font-size: 16px;
+  color: black;
 }
 
 /* LOCATION DETAIL */
@@ -738,4 +740,133 @@ footer img {
 .detail__review img {
   position: absolute;
   top: -25px;
+}
+
+/* CHECKOUT */
+.checkout__container {
+  display: flex;
+  gap: 20px;
+}
+.checkout__container {
+  margin-top: 20px;
+}
+.location {
+  /* height: 360px; */
+  width: 320px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.336);
+  overflow: hidden;
+  margin-top: 15px;
+}
+.location__image {
+  width: 100%;
+}
+.location__info {
+  padding: 20px 30px;
+}
+.location__name {
+  color: #111b47;
+  font-size: 18px;
+  margin-bottom: 0.5em;
+}
+.location__desc {
+  color: #505f98;
+  font-size: 14px;
+}
+.location__price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.vehicle {
+  width: 300px;
+  height: 200px;
+  background-image: url("../image/vehicle/vehicle-1.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 2px rgba(0, 0, 0, 0.438);
+  position: relative;
+  margin-top: 15px;
+}
+.vehicle__info {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.692);
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+.vehicle__info i {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 25px;
+}
+.vehicle__name {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.vehicle__plate {
+  font-size: 14px;
+}
+
+.checkout__payment {
+  background-color: #f3f7f8;
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.253);
+}
+.checkout__payment h3 {
+  margin-bottom: 10px;
+}
+.checkout__payment .ewallet {
+  margin: 20px 0 30px;
+}
+.checkout__payment i {
+  font-size: 35px;
+  color: black;
+}
+.checkout__label {
+  color: #5a5a5a;
+  margin-bottom: 5px;
+}
+.checkout__payment hr {
+  margin: 10px 0;
+}
+.checkout__button {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* EWALLET */
+.ewallet {
+  width: 180px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.863);
+  color: white;
+}
+.ewallet__name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.ewallet__balance {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.ewallet__points {
+  font-size: 10px;
+}
+.ewallet__name,
+.ewallet__balance,
+.ewallet__points {
+  color: white;
+}
+.ewallet--purple {
+  background-color: #4b2489;
 }
