@@ -967,3 +967,31 @@ footer img {
   padding: 10px 20px;
   border-radius: 10px;
 }
+
+/* VEHICLE */
+.app__vehicle {
+  width: 100%;
+}
+.vehicle__container {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  gap: 10px;
+  align-items: center;
+}
+.vehicle--small {
+  width: 250px;
+}
+.vehicle--add {
+  background-image: url("../image/vehicle/empty.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+  text-align: center;
+}
+.vehicle--add i {
+  font-size: 30px;
+  cursor: pointer;
+}
