@@ -53,9 +53,7 @@
             <p class="detail__slot">
               <i class="fas fa-info-circle"></i> <b>200</b> slot tersedia
             </p>
-            <a href="./app__activity.html">
-              <button class="btn">Booking</button>
-            </a>
+              <button class="detail__booking btn">Booking</button>
           </div>
         </div>
         <div class="location__map-view">
@@ -115,5 +113,42 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal__container">
+      <div class="modal__vehicle">
+        <h2>Pilih Jenis Kendaraanmu Yuk</h2>
+        <div class="vehicle__container">
+          <a href="./app__checkout.html" class="vehicle vehicle--small">
+            <div class="vehicle__info">
+              <p class="vehicle__name">Mustang GT</p>
+              <h4 class="vehicle__plate">XXX XXX XXX</h4>
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </a>
+          <a href="./app__checkout.html" class="vehicle vehicle--small">
+            <div class="vehicle__info">
+              <p class="vehicle__name">Mustang GT</p>
+              <h4 class="vehicle__plate">XXX XXX XXX</h4>
+              <i class="fas fa-chevron-up"></i>
+            </div>
+          </a>
+        </div>
+        <button class="modal__close"><i class="fas fa-times"></i></button>
+      </div>
+
+      <script>
+        bookingBtn = document.querySelector('.detail__booking');
+        modalContainer = document.querySelector('.modal__container');
+        modalCLoseBtn = document.querySelector('.modal__close');
+
+
+        bookingBtn.addEventListener('click',()=>{
+          modalContainer.classList.add('visible')
+        })
+        modalCLoseBtn.addEventListener('click', ()=> {
+          modalContainer.classList.remove('visible')
+        })
+      </script>
   </body>
 </html>

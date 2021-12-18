@@ -995,3 +995,37 @@ footer img {
   font-size: 30px;
   cursor: pointer;
 }
+
+/* ========== */
+/* MODAL */
+/* ========== */
+
+.modal__container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+  display: none;
+}
+.modal__container.visible {
+  display: grid;
+  place-items: center;
+}
+.modal__vehicle {
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px 30px;
+  position: relative;
+}
+.modal__close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  color: #111b47;
+  cursor: pointer;
+}
