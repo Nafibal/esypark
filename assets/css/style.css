@@ -549,7 +549,7 @@ footer img {
 /* APPLICATION */
 /* ============= */
 .app {
-  padding: 40px 0;
+  padding: 40px 0 120px;
 }
 .app__menu {
   display: flex;
@@ -742,7 +742,7 @@ footer img {
 /* CHECKOUT */
 .checkout__container {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 .checkout__container {
   margin-top: 20px;
@@ -840,16 +840,31 @@ footer img {
 }
 
 /* EWALLET */
+.app__wallet {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 .ewallet {
-  width: 180px;
-  padding: 10px 20px;
+  width: 350px;
+  height: 130px;
   border-radius: 10px;
   box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.863);
   color: white;
+  padding: 10px 20px;
+}
+.ewallet--small {
+  width: 180px;
+  padding: 10px;
 }
 .ewallet__name {
-  font-size: 20px;
-  font-weight: bold;
+  width: 40%;
+  margin-bottom: 5px;
+}
+.ewallet__name--small {
+  width: 70px;
   margin-bottom: 5px;
 }
 .ewallet__balance {
@@ -859,13 +874,24 @@ footer img {
 .ewallet__points {
   font-size: 10px;
 }
-.ewallet__name,
 .ewallet__balance,
 .ewallet__points {
   color: white;
 }
 .ewallet--purple {
   background-color: #4b2489;
+}
+.ewallet--red {
+  background-color: #e82529;
+}
+.ewallet--orange {
+  background-color: #f04d2c;
+}
+.ewallet--green {
+  background-color: #0081a0;
+}
+.ewallet--blue {
+  background-color: #2196f3;
 }
 
 /* ACTIVE */
@@ -874,11 +900,12 @@ footer img {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 50px;
+  margin-top: 60px;
   padding: 20px 30px 100px;
-  border-radius: 10px;
   box-shadow: 0 5px 10px 1px black;
   position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .app__active .location {
   width: 320px;
@@ -889,6 +916,30 @@ footer img {
 }
 .app__active .location-info {
   padding: 20px 30px;
+}
+.active__link--active {
+  color: white;
+  background-color: #111b47;
+
+  top: -60px;
+  left: 0;
+}
+.active__link--history {
+  right: 0;
+  top: -60px;
+  color: black;
+}
+.active__link--active,
+.active__link--history {
+  position: absolute;
+  font-family: "sora";
+  font-size: 30px;
+  font-weight: bold;
+  width: 50%;
+  padding: 10px 0;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .active__info {
