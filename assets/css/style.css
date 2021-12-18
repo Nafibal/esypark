@@ -842,6 +842,10 @@ footer img {
 /* EWALLET */
 .app__wallet {
   width: 100%;
+}
+.ewallet__container {
+  padding: 20px 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1016,6 +1020,13 @@ footer img {
   border-radius: 10px;
   background-color: white;
   padding: 20px 30px;
+  position: relative;
+}
+.modal__ewallet {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 800px;
   position: relative;
 }
 .modal__close {

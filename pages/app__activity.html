@@ -73,9 +73,7 @@
           </div>
           <div class="active__button--container">
             <button class="btn active-btn">BUKA PENGAMAN</button>
-            <a href="./app__checkout.html">
-              <button class="btn active-btn">CHECKOUT</button>
-            </a>
+            <button class="active__checkkout btn active-btn">CHECKOUT</button>
           </div>
         </div>
       </div>
@@ -104,5 +102,72 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODAL -->
+    <div class="modal__container">
+      <div class="modal__ewallet">
+        <h2>Akun e-Wallet</h2>
+        <div class="ewallet__container">
+          <a href="./app__checkout.html" class="ewallet ewallet--purple">
+            <img
+              src="../assets/image/wallet/ovo.png"
+              class="ewallet__name--small"
+              alt=""
+            />
+            <p class="ewallet__balance">Rp 235.000</p>
+            <p class="ewallet__points">OVO Points 0</p>
+          </a>
+          <a href="./app__checkout.html" class="ewallet ewallet--green">
+            <img
+              src="../assets/image/wallet/gopay.png"
+              class="ewallet__name"
+              alt=""
+            />
+            <p class="ewallet__balance">Rp 235.000</p>
+            <p class="ewallet__points">GOPAY Points 0</p>
+          </a>
+          <a href="./app__checkout.html" class="ewallet ewallet--red">
+            <img
+              src="../assets/image/wallet/linkaja.png"
+              class="ewallet__name--small"
+              alt=""
+            />
+            <p class="ewallet__balance">Rp 235.000</p>
+          </a>
+          <a href="./app__checkout.html" class="ewallet ewallet--blue">
+            <img
+              src="../assets/image/wallet/dana.png"
+              class="ewallet__name"
+              alt=""
+            />
+            <p class="ewallet__balance">Rp 235.000</p>
+            <p class="ewallet__points">DANA Points 0</p>
+          </a>
+          <a href="./app__checkout.html" class="ewallet ewallet--orange">
+            <img
+              src="../assets/image/wallet/shopeepay.png"
+              class="ewallet__name"
+              alt=""
+            />
+            <p class="ewallet__balance">Rp 235.000</p>
+            <p class="ewallet__points">Shopee Pay Points 0</p>
+          </a>
+          <button class="modal__close"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      checkoutBtn = document.querySelector(".active__checkkout");
+      modalContainer = document.querySelector(".modal__container");
+      modalCLoseBtn = document.querySelector(".modal__close");
+
+      checkoutBtn.addEventListener("click", () => {
+        modalContainer.classList.add("visible");
+      });
+      modalCLoseBtn.addEventListener("click", () => {
+        modalContainer.classList.remove("visible");
+      });
+    </script>
   </body>
 </html>
