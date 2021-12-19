@@ -52,12 +52,12 @@
             Riwayat
           </a>
           <div class="location">
-            <img src="../assets/image/location/location-1.png" alt="" />
+            <img src="../assets/image/location/location-2.png" alt="" />
             <div class="location-info">
               <h5 class="location-name">Ikea, Serpong</h5>
               <p class="location-desc">
-                Ikea serpong is furniture store. This store open 9.00 AM until
-                11.00 PM
+                TP (Tunjungan Plza). Tempat ini buka pukul 9.00 AM sampai 11.00
+                PM
               </p>
             </div>
           </div>
@@ -117,25 +117,44 @@
         <div class="barcode">
           <h3>Barcode Masuk</h3>
           <img src="../assets/image/qr-code.png" alt="" />
+          <span class="barcode__detail">lihat detail</span>
         </div>
         <div class="barcode">
           <h3>Barcode Keluar</h3>
           <img src="../assets/image/qr-code.png" alt="" />
+          <span class="barcode__detail">lihat detail</span>
         </div>
         <button class="modal__close"><i class="fas fa-times"></i></button>
+      </div>
+
+      <div class="modal__barcode single__barcode">
+        <img src="../assets/image/qr-code.png" alt="" />
+        <button class="modal__close barcode__close">
+          <i class="fas fa-times"></i>
+        </button>
       </div>
     </div>
 
     <script>
       barcodeBtn = document.querySelector(".active__barcode");
       modalContainer = document.querySelector(".modal__container");
-      modalCLoseBtn = document.querySelector(".modal__close");
+      modalBarcode = document.querySelector(".modal__barcode");
+      singleBarcode = document.querySelector(".single__barcode");
 
       barcodeBtn.addEventListener("click", () => {
         modalContainer.classList.add("visible");
+        modalBarcode.classList.add("visible");
       });
-      modalCLoseBtn.addEventListener("click", () => {
-        modalContainer.classList.remove("visible");
+      modalContainer.addEventListener("click", (e) => {
+        if (e.target.classList.value == "fas fa-times") {
+          modalContainer.classList.remove("visible");
+          modalBarcode.classList.remove("visible");
+          singleBarcode.classList.remove("visible");
+        }
+        if (e.target.classList.value == "barcode__detail") {
+          modalBarcode.classList.remove("visible");
+          singleBarcode.classList.add("visible");
+        }
       });
     </script>
   </body>

@@ -52,12 +52,12 @@
             Riwayat
           </a>
           <div class="location">
-            <img src="../assets/image/location/location-1.png" alt="" />
+            <img src="../assets/image/location/location-2.png" alt="" />
             <div class="location-info">
               <h5 class="location-name">Ikea, Serpong</h5>
               <p class="location-desc">
-                Ikea serpong is furniture store. This store open 9.00 AM until
-                11.00 PM
+                TP (Tunjungan Plza). Tempat ini buka pukul 9.00 AM sampai 11.00
+                PM
               </p>
             </div>
           </div>
@@ -73,6 +73,7 @@
             </div>
             <div class="active__label">
               <img src="../assets/image/qr-code.png" alt="" />
+              <span class="barcode__detail">lihat detail</span>
             </div>
           </div>
           <div class="active__button--container">
@@ -159,18 +160,36 @@
           <button class="modal__close"><i class="fas fa-times"></i></button>
         </div>
       </div>
+
+      <div class="modal__barcode">
+        <img src="../assets/image/qr-code.png" alt="" />
+        <button class="modal__close"><i class="fas fa-times"></i></button>
+      </div>
     </div>
 
     <script>
       checkoutBtn = document.querySelector(".active__checkkout");
       modalContainer = document.querySelector(".modal__container");
+      modalEwallet = document.querySelector(".modal__ewallet");
+      modalBarcode = document.querySelector(".modal__barcode");
+      barcodeBtn = document.querySelector(".barcode__detail");
       modalCLoseBtn = document.querySelector(".modal__close");
 
       checkoutBtn.addEventListener("click", () => {
         modalContainer.classList.add("visible");
+        modalEwallet.classList.add("visible");
       });
-      modalCLoseBtn.addEventListener("click", () => {
-        modalContainer.classList.remove("visible");
+      barcodeBtn.addEventListener("click", () => {
+        modalContainer.classList.add("visible");
+        modalBarcode.classList.add("visible");
+      });
+
+      modalContainer.addEventListener("click", (e) => {
+        if (e.target.classList.value == "fas fa-times") {
+          modalContainer.classList.remove("visible");
+          modalEwallet.classList.remove("visible");
+          modalBarcode.classList.remove("visible");
+        }
       });
     </script>
   </body>

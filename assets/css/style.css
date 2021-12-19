@@ -44,7 +44,8 @@ h5,
 h6,
 p,
 a,
-pre {
+pre,
+span {
   text-decoration: none;
   font-family: "Sora", sans-serif;
 }
@@ -554,6 +555,7 @@ footer img {
 /* ============= */
 .app {
   padding: 40px 0 120px;
+  min-height: 550px;
 }
 .app__menu {
   display: flex;
@@ -1034,6 +1036,10 @@ footer img {
   padding: 20px 30px;
   width: 800px;
   position: relative;
+  display: none;
+}
+.modal__ewallet.visible {
+  display: block;
 }
 .modal__checkout {
   border-radius: 10px;
@@ -1058,9 +1064,13 @@ footer img {
   padding: 30px 60px;
   position: relative;
   border-radius: 10px;
+  display: none;
 }
 .modal__barcode img {
   width: 300px;
+}
+.modal__barcode.visible {
+  display: block;
 }
 .modal__close {
   position: absolute;
@@ -1071,5 +1081,9 @@ footer img {
   outline: none;
   font-size: 30px;
   color: #111b47;
+  cursor: pointer;
+}
+
+.barcode__detail {
   cursor: pointer;
 }
