@@ -922,16 +922,12 @@ footer img {
   padding: 20px 30px;
 }
 .active__link--active {
-  color: white;
-  background-color: #111b47;
-
   top: -60px;
   left: 0;
 }
 .active__link--history {
   right: 0;
   top: -60px;
-  color: black;
 }
 .active__link--active,
 .active__link--history {
@@ -944,6 +940,11 @@ footer img {
   text-align: center;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  color: black;
+}
+.active__link--selected {
+  color: white;
+  background-color: #111b47;
 }
 
 .active__info {
@@ -1028,6 +1029,33 @@ footer img {
   padding: 20px 30px;
   width: 800px;
   position: relative;
+}
+.modal__checkout {
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  background-color: white;
+}
+.modal__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.modal__info button {
+  font-size: 20px;
+  padding: 10px 40px;
+}
+.modal__barcode {
+  background-color: white;
+  padding: 30px 60px;
+  position: relative;
+  border-radius: 10px;
+}
+.modal__barcode img {
+  width: 300px;
 }
 .modal__close {
   position: absolute;

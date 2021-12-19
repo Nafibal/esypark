@@ -45,10 +45,10 @@
         </div>
 
         <div class="app__active">
-          <a href="" class="active__link--active active__link--selected">
+          <a href="./app__activity.html" class="active__link--active">
             Parkir Aktif
           </a>
-          <a href="./app__activity--history.html" class="active__link--history">
+          <a href="" class="active__link--history active__link--selected">
             Riwayat
           </a>
           <div class="location">
@@ -63,21 +63,25 @@
           </div>
           <div class="active__info">
             <div class="active__label">
-              <p>Area Parkir : A12</p>
-            </div>
-            <div class="active__label">
               <p>Kendaraan : Avanza</p>
             </div>
             <div class="active__label">
               <p>Plat Nomor : N 532 A</p>
             </div>
             <div class="active__label">
-              <img src="../assets/image/qr-code.png" alt="" />
+              <p>Tanggal : 10 November 2021</p>
+            </div>
+            <div class="active__label">
+              <p>Durasi : 8 jam 10 menit</p>
             </div>
           </div>
           <div class="active__button--container">
-            <button class="btn active-btn">BUKA PENGAMAN</button>
-            <button class="active__checkkout btn active-btn">CHECKOUT</button>
+            <a href="./app__location-detail.html">
+              <button class="btn active-btn">Booking Lagi</button>
+            </a>
+            <button class="active__barcode btn active-btn">
+              Lihat Barcode
+            </button>
           </div>
         </div>
       </div>
@@ -109,64 +113,25 @@
 
     <!-- MODAL -->
     <div class="modal__container">
-      <div class="modal__ewallet">
-        <h2>Akun e-Wallet</h2>
-        <div class="ewallet__container">
-          <a href="./app__checkout.html" class="ewallet ewallet--purple">
-            <img
-              src="../assets/image/wallet/ovo.png"
-              class="ewallet__name--small"
-              alt=""
-            />
-            <p class="ewallet__balance">Rp 235.000</p>
-            <p class="ewallet__points">OVO Points 0</p>
-          </a>
-          <a href="./app__checkout.html" class="ewallet ewallet--green">
-            <img
-              src="../assets/image/wallet/gopay.png"
-              class="ewallet__name"
-              alt=""
-            />
-            <p class="ewallet__balance">Rp 235.000</p>
-            <p class="ewallet__points">GOPAY Points 0</p>
-          </a>
-          <a href="./app__checkout.html" class="ewallet ewallet--red">
-            <img
-              src="../assets/image/wallet/linkaja.png"
-              class="ewallet__name--small"
-              alt=""
-            />
-            <p class="ewallet__balance">Rp 235.000</p>
-          </a>
-          <a href="./app__checkout.html" class="ewallet ewallet--blue">
-            <img
-              src="../assets/image/wallet/dana.png"
-              class="ewallet__name"
-              alt=""
-            />
-            <p class="ewallet__balance">Rp 235.000</p>
-            <p class="ewallet__points">DANA Points 0</p>
-          </a>
-          <a href="./app__checkout.html" class="ewallet ewallet--orange">
-            <img
-              src="../assets/image/wallet/shopeepay.png"
-              class="ewallet__name"
-              alt=""
-            />
-            <p class="ewallet__balance">Rp 235.000</p>
-            <p class="ewallet__points">Shopee Pay Points 0</p>
-          </a>
-          <button class="modal__close"><i class="fas fa-times"></i></button>
+      <div class="modal__barcode">
+        <div class="barcode">
+          <h3>Barcode Masuk</h3>
+          <img src="../assets/image/qr-code.png" alt="" />
         </div>
+        <div class="barcode">
+          <h3>Barcode Keluar</h3>
+          <img src="../assets/image/qr-code.png" alt="" />
+        </div>
+        <button class="modal__close"><i class="fas fa-times"></i></button>
       </div>
     </div>
 
     <script>
-      checkoutBtn = document.querySelector(".active__checkkout");
+      barcodeBtn = document.querySelector(".active__barcode");
       modalContainer = document.querySelector(".modal__container");
       modalCLoseBtn = document.querySelector(".modal__close");
 
-      checkoutBtn.addEventListener("click", () => {
+      barcodeBtn.addEventListener("click", () => {
         modalContainer.classList.add("visible");
       });
       modalCLoseBtn.addEventListener("click", () => {

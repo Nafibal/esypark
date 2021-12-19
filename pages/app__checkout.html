@@ -95,9 +95,7 @@
               <h3>TOTAL</h3>
               <h3>Rp 17.000</h3>
             </div>
-            <a href="">
-              <button class="btn checkout__button">Konfirmasi</button>
-            </a>
+            <button class="btn checkout__button">Konfirmasi</button>
           </div>
         </div>
       </div>
@@ -127,7 +125,30 @@
       </div>
     </footer>
 
-    
+    <div class="modal__container">
+      <div class="modal__checkout">
+        <img src="../assets/image/checkout-illustration.png" alt="" />
+        <div class="modal__info">
+          <img src="../assets/image/qr-code.png" alt="" />
+          <h2>silahkan scan barcode</h2>
+          <a href="./app__activity--history.html"
+            ><button class="btn">oke</button></a
+          >
+        </div>
+      </div>
     </div>
+
+    <script>
+      confirmBtn = document.querySelector(".checkout__button");
+      modalContainer = document.querySelector(".modal__container");
+      modalCLoseBtn = document.querySelector(".modal__close");
+
+      confirmBtn.addEventListener("click", () => {
+        modalContainer.classList.add("visible");
+      });
+      modalCLoseBtn.addEventListener("click", () => {
+        modalContainer.classList.remove("visible");
+      });
+    </script>
   </body>
 </html>
