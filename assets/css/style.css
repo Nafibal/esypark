@@ -827,6 +827,9 @@ footer img {
   border-radius: 10px;
   position: absolute;
 }
+.detail__review img {
+  width: 70px;
+}
 .detail__review--1 {
   top: -50px;
   right: 0;
