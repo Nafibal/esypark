@@ -627,6 +627,9 @@ footer img {
   align-items: center;
   padding: 10px;
 }
+.review__user img {
+  width: 60px;
+}
 .review__user p {
   color: #111b47;
   font-weight: bold;
