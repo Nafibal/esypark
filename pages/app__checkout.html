@@ -77,9 +77,7 @@
                 <p class="ewallet__balance">Rp 235.000</p>
                 <p class="ewallet__points">OVO Points 0</p>
               </div>
-              <a href="">
-                <i class="fas fa-edit"></i>
-              </a>
+              <i class="ewallet__edit fas fa-edit"></i>
             </div>
             <h3>SUBTOTAL</h3>
             <div class="flex">
@@ -136,18 +134,80 @@
           >
         </div>
       </div>
+      <div class="modal__ewallet">
+        <h2>Akun e-Wallet</h2>
+        <div class="ewallet__container">
+          <a href="./app__checkout.html" class="ewallet ewallet--purple">
+            <img
+              src="../assets/image/wallet/ovo.png"
+              class="ewallet__name--small"
+              alt=""
+            />
+            <p class="ewallet__balance">Rp 235.000</p>
+            <p class="ewallet__points">OVO Points 0</p>
+          </a>
+          <a href="./app__checkout.html" class="ewallet ewallet--green">
+            <img
+              src="../assets/image/wallet/gopay.png"
+              class="ewallet__name"
+              alt=""
+            />
+            <p class="ewallet__balance">Rp 235.000</p>
+            <p class="ewallet__points">GOPAY Points 0</p>
+          </a>
+          <a href="./app__checkout.html" class="ewallet ewallet--red">
+            <img
+              src="../assets/image/wallet/linkaja.png"
+              class="ewallet__name--small"
+              alt=""
+            />
+            <p class="ewallet__balance">Rp 235.000</p>
+          </a>
+          <a href="./app__checkout.html" class="ewallet ewallet--blue">
+            <img
+              src="../assets/image/wallet/dana.png"
+              class="ewallet__name"
+              alt=""
+            />
+            <p class="ewallet__balance">Rp 235.000</p>
+            <p class="ewallet__points">DANA Points 0</p>
+          </a>
+          <a href="./app__checkout.html" class="ewallet ewallet--orange">
+            <img
+              src="../assets/image/wallet/shopeepay.png"
+              class="ewallet__name"
+              alt=""
+            />
+            <p class="ewallet__balance">Rp 235.000</p>
+            <p class="ewallet__points">Shopee Pay Points 0</p>
+          </a>
+          <button class="modal__close"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
     </div>
 
     <script>
       confirmBtn = document.querySelector(".checkout__button");
       modalContainer = document.querySelector(".modal__container");
-      modalCLoseBtn = document.querySelector(".modal__close");
+      modalCheckout = document.querySelector(".modal__checkout");
+      modalEwallet = document.querySelector(".modal__ewallet");
+      ewalletBtn = document.querySelector(".ewallet__edit");
 
       confirmBtn.addEventListener("click", () => {
         modalContainer.classList.add("visible");
+        modalCheckout.classList.add("visible");
       });
-      modalCLoseBtn.addEventListener("click", () => {
-        modalContainer.classList.remove("visible");
+      ewalletBtn.addEventListener("click", () => {
+        modalContainer.classList.add("visible");
+        modalEwallet.classList.add("visible");
+      });
+
+      modalContainer.addEventListener("click", (e) => {
+        if (e.target.classList.value == "fas fa-times") {
+          modalContainer.classList.remove("visible");
+          modalEwallet.classList.remove("visible");
+          modalCheckout.classList.remove("visible");
+        }
       });
     </script>
   </body>

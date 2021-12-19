@@ -1147,10 +1147,13 @@ footer img {
 }
 .modal__checkout {
   border-radius: 10px;
-  display: flex;
   padding: 20px;
+  display: none;
   gap: 20px;
   background-color: white;
+}
+.modal__checkout.visible {
+  display: flex;
 }
 .modal__info {
   display: flex;
@@ -1189,5 +1192,9 @@ footer img {
 }
 
 .barcode__detail {
+  cursor: pointer;
+}
+
+.ewallet__edit {
   cursor: pointer;
 }
