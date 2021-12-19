@@ -14,6 +14,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/login.css" />
   </head>
   <body>
     <!-- NAVIGATION -->
@@ -21,12 +22,12 @@
       <div class="container">
         <img class="nav-logo" src="./assets/image/Logo.png" alt="logo" />
         <div class="nav-list">
-          <a class="nav-item" href="">Beranda</a>
+          <a class="nav-item underline" href="">Beranda</a>
           <a class="nav-item" href="">Pengaturan</a>
           <a class="nav-item" href="">Tentang Kami</a>
           <span class="nav-item">|</span>
           <a class="nav-item" href="">ID</a>
-          <a href="./pages/login.html" class="nav-item btn"> Log In </a>
+          <button class="login-btn nav-item btn">Log In</button>
         </div>
       </div>
     </nav>
@@ -158,5 +159,96 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal__container">
+      <div class="modal__login login">
+        <img src="../assets/image/modal-illustration.png" alt="" />
+        <div class="modal-info">
+          <h2>Selamat Datang Kembali</h2>
+          <p>
+            Belum memiliki akun?
+            <span class="change-modal">Daftar </span>
+          </p>
+          <form action="./pages/home.html">
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="input-container">
+              <label for="password">Password</label>
+              <input type="password" name="password" />
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" name="remember-me" />
+              <label for="remember-me">Ingat saya?</label>
+              <p>Lupa Password?</p>
+            </div>
+            <button class="btn" type="submit">Masuk</button>
+          </form>
+          <p class="center">atau masuk dengan</p>
+          <div class="flex social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+        <button class="btn-close"><i class="fas fa-times"></i></button>
+      </div>
+
+      <div class="modal__login signup">
+        <img src="../assets/image/modal-illustration.png" alt="" />
+        <div class="modal-info">
+          <h2>Daftar Sekarang</h2>
+          <p>Sudah memiliki akun? <span class="change-modal">Masuk </span></p>
+          <form action="./home.html">
+            <div class="input-container">
+              <label for="notep">No Telepon</label>
+              <input type="number" name="notelp" />
+            </div>
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" name="email" />
+            </div>
+            <div class="input-container">
+              <label for="password">Password</label>
+              <input type="password" name="password" />
+            </div>
+            <button class="btn">Masuk</button>
+          </form>
+          <p class="center">atau daftar dengan</p>
+          <div class="flex social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+        <button class="btn-close"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+
+    <script>
+      loginBtn = document.querySelector(".login-btn");
+      modalContainer = document.querySelector(".modal__container");
+      login = document.querySelector(".login");
+      signup = document.querySelector(".signup");
+
+      loginBtn.addEventListener("click", () => {
+        modalContainer.classList.add("visible");
+        login.classList.add("visible");
+      });
+
+      modalContainer.addEventListener("click", (e) => {
+        console.log(e.target.classList.value);
+        if (e.target.classList.value == "fas fa-times") {
+          modalContainer.classList.remove("visible");
+          signup.classList.remove("visible");
+          login.classList.remove("visible");
+        }
+        if (e.target.classList.value == "change-modal") {
+          login.classList.toggle("visible");
+          signup.classList.toggle("visible");
+        }
+      });
+    </script>
   </body>
 </html>

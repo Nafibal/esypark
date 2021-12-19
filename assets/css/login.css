@@ -1,18 +1,6 @@
 /* font */
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  width: 1000px;
-  margin: 0 auto;
-  /* border: 2px solid red; */
-}
 .flex {
   display: flex;
   align-items: center;
@@ -31,39 +19,24 @@
   background-color: white;
   color: #111b47;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-  text-decoration: none;
-  font-family: "Sora", sans-serif;
-}
-
-body {
-  height: 100vh;
-  display: grid;
-  place-items: center;
-  background-color: rgba(0, 0, 0, 0.486);
-}
 
 /* LOGIN REGIS MODAL */
-.modal-container {
+.modal__login {
+  display: none;
   position: relative;
   padding: 50px;
   width: 800px;
   height: 500px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 41px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.432);
   background-color: white;
 }
-.modal-container img {
+.modal__login.visible {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal__login img {
   width: 300px;
 }
 .modal-info {
@@ -84,7 +57,7 @@ body {
   color: #444b59;
   margin-bottom: 20px;
 }
-.modal-info p span a {
+.modal-info p span {
   font-weight: bold;
   color: #111b47;
   cursor: pointer;
@@ -135,7 +108,7 @@ body {
   width: 200px;
   margin: 0 auto;
 }
-.modal-container .btn-close {
+.modal__login .btn-close {
   position: absolute;
   top: 40px;
   right: 30px;
