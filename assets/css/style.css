@@ -89,6 +89,7 @@ nav .nav-list .nav-item {
   margin-left: 10px;
   font-weight: bold;
   color: #929ecc;
+  padding-bottom: 5px;
 }
 nav .nav-list .btn {
   padding: 3px 24px;
@@ -259,6 +260,106 @@ footer img {
   margin-bottom: 10px;
 }
 
+/* ============= */
+/* POLICY PAGE */
+/* ============= */
+.section-update {
+  padding: 100px 0 40px;
+}
+.update__container {
+  position: relative;
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px;
+  background-image: linear-gradient(#9dacf5, #24eee757);
+  border-radius: 10px;
+}
+.update__info {
+  width: 500px;
+  margin-left: 130px;
+}
+.update__title {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+.update__text {
+  color: #6f7cb2;
+  font-size: 18px;
+  width: 500px;
+  margin: 0 auto;
+}
+.update__photo {
+  position: absolute;
+  border-radius: 10px;
+  width: 200px;
+  top: -80px;
+  left: -50px;
+}
+.update__button {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+}
+.update__button .btn {
+  padding: 10px 30px;
+  font-size: 25px;
+  border: none;
+}
+
+.section-policy {
+  padding: 80px 0;
+}
+.section-policy .container--flex {
+  justify-content: space-between;
+  align-items: center;
+}
+.policy__ceo {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.288);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  text-align: center;
+}
+.policy__ceo img {
+  width: 150px;
+  margin-bottom: 15px;
+}
+.policy__ceo h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.policy__ceo p {
+  color: #6f7cb2;
+}
+.section-policy .column {
+  width: 70%;
+  position: relative;
+}
+.policy__container {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.356);
+  color: #6f7cb2;
+  z-index: 10;
+  background-color: white;
+}
+.policy__vector {
+  position: absolute;
+  width: 150px;
+  z-index: -1;
+}
+.policy__vector--1 {
+  top: -50px;
+  right: -50px;
+}
+.policy__vector--2 {
+  bottom: -60px;
+  left: -60px;
+}
 /* ============= */
 /* HOME PAGE */
 /* ============= */
